@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-xl bg-orange-gradient flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Flame className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">FitLife</span>
+            <span className="text-xl font-bold text-foreground">Campus Fit</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,7 +53,7 @@ const Navbar = () => {
               to="/events"
               className="btn-primary inline-flex items-center gap-2"
             >
-              Join Now
+              Get Involved
             </Link>
           </div>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
               className="btn-primary text-center mt-2"
               onClick={() => setIsOpen(false)}
             >
-              Join Now
+              Get Involved
             </Link>
           </div>
         </div>

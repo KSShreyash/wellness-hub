@@ -9,38 +9,38 @@ import heroImage from "@/assets/hero-athlete.png";
 const features = [
   {
     icon: Dumbbell,
-    title: "Personal Fitness Coaching",
-    description: "Get customized workout plans and one-on-one guidance from certified fitness coaches who understand your goals.",
+    title: "Peer-Led Fitness Sessions",
+    description: "Join workout sessions led by fellow students who share your passion for fitness. Learn from peers in a supportive, judgment-free environment.",
   },
   {
     icon: Activity,
     title: "Strength & Conditioning",
-    description: "Build functional strength and improve your athletic performance with our comprehensive conditioning programs.",
+    description: "Build functional strength and improve your fitness with our student-coordinated conditioning programs designed for all levels.",
   },
   {
     icon: Users,
     title: "Group Fitness Activities",
-    description: "Join energizing group classes that combine fun, motivation, and community support to keep you engaged.",
+    description: "Connect with fellow students through fun group workouts. From yoga to HIIT, find activities that match your interests and schedule.",
   },
   {
     icon: HeartPulse,
     title: "Cardio & Endurance",
-    description: "Boost your cardiovascular health and build lasting endurance through varied and exciting cardio programs.",
+    description: "Boost your cardiovascular health with campus running groups, cycling sessions, and other cardio activities organized by club members.",
   },
   {
     icon: Zap,
     title: "Functional Workouts",
-    description: "Train movements, not muscles. Our functional training improves daily life performance and prevents injuries.",
+    description: "Train movements that improve daily life performance. Our student volunteers guide you through effective functional training routines.",
   },
 ];
 
 const featureTags = [
-  "Personal Training",
-  "Strength",
-  "Group Classes",
-  "Swimming",
-  "Cardio Equipment",
-  "Functional Workouts",
+  "Peer-Led Sessions",
+  "Strength Training",
+  "Group Workouts",
+  "Yoga & Stretching",
+  "Campus Runs",
+  "Wellness Events",
 ];
 
 const Index = () => {
@@ -48,7 +48,7 @@ const Index = () => {
     <>
       <SEO 
         title="Home" 
-        description="Transform your life with FitLife Fitness Club. Join our community for holistic fitness, personal coaching, and wellness programs designed for all fitness levels."
+        description="Join our free, student-run College Fitness Club. Open to all students! Participate in peer-led workouts, campus wellness events, and build a healthier lifestyle with your campus community."
       />
       <Navbar />
       
@@ -63,21 +63,24 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Content */}
               <div className="order-2 lg:order-1">
+                <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 opacity-0 animate-fade-in">
+                  Free • Student-Run • Open to All
+                </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in-up">
-                  Push Your{" "}
-                  <span className="text-gradient">Limits</span>{" "}
-                  with Our Fitness Club
+                  Your Campus{" "}
+                  <span className="text-gradient">Fitness</span>{" "}
+                  Community
                 </h1>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl opacity-0 animate-fade-in-up stagger-1">
-                  From beginner to advanced, experience workouts designed to help you achieve 
-                  peak performance and exceed your fitness goals. Join a community focused on 
-                  holistic wellness, personal growth, and healthy living.
+                  A student-run fitness club open to all college students. Join us for peer-led 
+                  workouts, campus wellness events, and a supportive community focused on 
+                  health, fitness, and personal growth—completely free!
                 </p>
 
                 <div className="flex flex-wrap gap-4 mb-12 opacity-0 animate-fade-in-up stagger-2">
                   <Link to="/events" className="btn-primary inline-flex items-center gap-2 group">
-                    Join the Fitness Club
+                    Join the Club
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link to="/benefits" className="btn-outline inline-flex items-center gap-2">
@@ -86,20 +89,13 @@ const Index = () => {
                   </Link>
                 </div>
 
-                {/* Stats */}
-                <div className="flex gap-8 opacity-0 animate-fade-in-up stagger-3">
-                  <div>
-                    <p className="text-3xl font-bold text-foreground">1.7K+</p>
-                    <p className="text-sm text-muted-foreground">Active Members</p>
-                  </div>
-                  <div>
-                    <p className="text-3xl font-bold text-foreground">50+</p>
-                    <p className="text-sm text-muted-foreground">Expert Trainers</p>
-                  </div>
-                  <div>
-                    <p className="text-3xl font-bold text-foreground">98%</p>
-                    <p className="text-sm text-muted-foreground">Satisfaction</p>
-                  </div>
+                {/* About Section - Replaced Stats */}
+                <div className="card-glass p-6 opacity-0 animate-fade-in-up stagger-3">
+                  <h3 className="text-foreground font-semibold mb-2">About Our Club</h3>
+                  <p className="text-sm text-muted-foreground">
+                    We're a group of passionate students dedicated to making fitness accessible 
+                    to everyone on campus. No fees, no membership—just show up and get moving!
+                  </p>
                 </div>
               </div>
 
@@ -109,7 +105,7 @@ const Index = () => {
                   <div className="absolute -inset-4 bg-primary/20 rounded-3xl blur-3xl" />
                   <img 
                     src={heroImage} 
-                    alt="Athlete running with determination" 
+                    alt="Student athlete staying active and healthy" 
                     className="relative rounded-3xl w-full max-w-lg mx-auto lg:max-w-none object-cover"
                   />
                 </div>
@@ -132,11 +128,11 @@ const Index = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-                Transform Your <span className="text-gradient">Fitness Journey</span>
+                Student-Led <span className="text-gradient">Activities</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Discover our comprehensive range of fitness programs designed to help you 
-                achieve your health and wellness goals.
+                Discover the variety of fitness activities organized and led by your fellow 
+                students. All activities are free and open to every student on campus.
               </p>
             </div>
 
@@ -154,22 +150,23 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* How to Get Involved Section */}
         <section className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent" />
           
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="card-glass p-12 lg:p-16 text-center max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Ready to Start Your Fitness Journey?
+                How to Get Involved
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                Join thousands of members who have transformed their lives through our 
-                fitness programs. Your journey to a healthier you starts today.
+                Getting started is easy! Just show up to any of our events or activities. 
+                No sign-up fees, no commitments—just bring your enthusiasm and 
+                willingness to move.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link to="/events" className="btn-primary inline-flex items-center gap-2 group">
-                  Get Started Today
+                  View Campus Events
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link to="/benefits" className="btn-outline">

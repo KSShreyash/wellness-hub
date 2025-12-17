@@ -7,70 +7,70 @@ import SEO from "@/components/SEO";
 
 const clubEvents = [
   {
-    title: "Summer Fitness Challenge",
-    date: "July 15, 2024",
-    time: "6:00 AM - 8:00 PM",
-    location: "FitLife Main Campus",
-    description: "A full-day fitness challenge featuring obstacle courses, team workouts, and wellness activities. Compete for prizes and connect with fellow fitness enthusiasts.",
+    title: "Fall Semester Fitness Kickoff",
+    date: "September 5, 2024",
+    time: "5:00 PM - 7:00 PM",
+    location: "Campus Recreation Center",
+    description: "Started the semester strong with an open workout session and club orientation. New members met student coordinators and learned about upcoming activities.",
     status: "completed" as const,
   },
   {
-    title: "Wellness Workshop: Nutrition 101",
-    date: "August 5, 2024",
-    time: "10:00 AM - 12:00 PM",
-    location: "FitLife Community Center",
-    description: "Learn the fundamentals of nutrition from certified dietitians. Discover meal planning strategies and healthy eating habits that support your fitness goals.",
+    title: "Wellness Workshop: Stress Management",
+    date: "October 12, 2024",
+    time: "6:00 PM - 7:30 PM",
+    location: "Student Union Room 204",
+    description: "Student-led workshop on managing academic stress through movement, breathing exercises, and healthy habits. Open discussion and peer support session included.",
     status: "completed" as const,
   },
   {
-    title: "Group HIIT Training Session",
-    date: "September 20, 2024",
-    time: "7:00 AM - 8:30 AM",
-    location: "Outdoor Training Area",
-    description: "High-intensity interval training session led by our expert coaches. Perfect for all fitness levels with modifications available.",
+    title: "Campus 5K Fun Run",
+    date: "November 2, 2024",
+    time: "8:00 AM",
+    location: "Campus Quad",
+    description: "A fun, non-competitive run around campus trails. All paces welcome—runners, joggers, and walkers participated together as a community.",
     status: "completed" as const,
   },
 ];
 
 const upcomingEvents = [
   {
-    title: "Winter Wellness Bootcamp",
-    date: "January 10, 2025",
-    time: "9:00 AM - 3:00 PM",
-    location: "FitLife Main Campus",
-    description: "Kick off the new year with our intensive wellness bootcamp. Includes strength training, cardio sessions, yoga, and nutrition workshops.",
+    title: "Spring Semester Welcome Workout",
+    date: "January 20, 2025",
+    time: "5:00 PM - 7:00 PM",
+    location: "Campus Recreation Center",
+    description: "Kick off the new semester with a group workout session! Meet fellow fitness enthusiasts, learn about club activities, and get moving with student-led exercises.",
     status: "upcoming" as const,
   },
   {
-    title: "Community 5K Run/Walk",
-    date: "January 25, 2025",
-    time: "7:00 AM",
-    location: "City Park Trail",
-    description: "Join us for a fun community run or walk! All fitness levels welcome. Participants receive a commemorative t-shirt and post-race refreshments.",
+    title: "Morning Yoga in the Quad",
+    date: "February 1, 2025",
+    time: "7:30 AM - 8:30 AM",
+    location: "Campus Quad (Lawn Area)",
+    description: "Start your day with a relaxing outdoor yoga session led by student volunteers. Bring your own mat or borrow one from the club. All experience levels welcome!",
     status: "upcoming" as const,
   },
   {
-    title: "Stress Relief & Mindfulness Workshop",
-    date: "February 8, 2025",
-    time: "2:00 PM - 4:00 PM",
-    location: "FitLife Yoga Studio",
-    description: "Learn practical techniques for managing stress through movement, breathing exercises, and mindfulness meditation. Led by certified wellness coaches.",
+    title: "Student HIIT Challenge",
+    date: "February 15, 2025",
+    time: "4:00 PM - 5:30 PM",
+    location: "Recreation Center Gym",
+    description: "High-intensity interval training session designed by student coordinators. Partner up with classmates for team challenges and friendly competition!",
     status: "upcoming" as const,
   },
   {
-    title: "Partner Workout Challenge",
-    date: "February 14, 2025",
-    time: "6:00 PM - 8:00 PM",
-    location: "FitLife Main Gym",
-    description: "Celebrate Valentine's Day with a fun partner workout challenge! Bring a friend, partner, or family member for team-based fitness activities and prizes.",
+    title: "Healthy Eating on a Student Budget",
+    date: "March 1, 2025",
+    time: "6:00 PM - 7:30 PM",
+    location: "Student Union Kitchen",
+    description: "Learn practical tips for eating healthy without breaking the bank. Student-led cooking demo and meal prep ideas perfect for dorm and apartment living.",
     status: "upcoming" as const,
   },
   {
-    title: "Spring Fitness Festival",
-    date: "March 22, 2025",
-    time: "8:00 AM - 5:00 PM",
-    location: "FitLife Outdoor Complex",
-    description: "Our biggest event of the season! Features fitness demos, health screenings, vendor booths, competitions, and live entertainment.",
+    title: "Spring Campus Fitness Festival",
+    date: "April 12, 2025",
+    time: "10:00 AM - 4:00 PM",
+    location: "Campus Recreation Fields",
+    description: "Our biggest event of the year! Try different workout stations, join group activities, participate in friendly competitions, and celebrate fitness with the campus community.",
     status: "upcoming" as const,
   },
 ];
@@ -79,8 +79,8 @@ const Events = () => {
   return (
     <>
       <SEO 
-        title="Events" 
-        description="Explore FitLife Fitness Club events including wellness workshops, group workouts, fitness challenges, and community meet-ups. Join us for your fitness journey."
+        title="Campus Events" 
+        description="Join free campus fitness events organized by students for students. Peer-led workouts, wellness workshops, and community activities open to all college students."
       />
       <Navbar />
       
@@ -93,16 +93,16 @@ const Events = () => {
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 opacity-0 animate-fade-in">
-                Join Our Community
+                Free & Open to All Students
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in-up stagger-1">
-                Fitness Club{" "}
+                Campus Fitness{" "}
                 <span className="text-gradient">Events</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed opacity-0 animate-fade-in-up stagger-2">
-                Join our exciting fitness events, workshops, and community gatherings. 
-                Connect with fellow members, challenge yourself, and have fun while 
-                working towards your fitness goals.
+                Discover upcoming fitness activities organized by students, for students. 
+                All events are free to attend—just show up and join the fun! No 
+                registration or membership required.
               </p>
             </div>
           </div>
@@ -116,8 +116,8 @@ const Events = () => {
                 Upcoming <span className="text-gradient">Events</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl">
-                Don't miss out on these exciting upcoming fitness and wellness events. 
-                Register early to secure your spot!
+                Check out what's coming up this semester. All events are student-led 
+                and completely free. Just show up and participate!
               </p>
             </div>
 
@@ -143,11 +143,11 @@ const Events = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Events Organized by <span className="text-gradient">FitLife</span>
+                Past <span className="text-gradient">Activities</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl">
-                Look back at our successful past events. These memories inspire us 
-                to create even better experiences for our community.
+                See what we've been up to! These past events brought students together 
+                for fitness, fun, and community building.
               </p>
             </div>
 
@@ -173,17 +173,18 @@ const Events = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="card-glass p-12 lg:p-16 text-center max-w-4xl mx-auto border-primary/20">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Want to Host an Event?
+                Want to Organize an Event?
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                Have an idea for a fitness event or workshop? We're always looking 
-                for ways to engage our community. Reach out to us!
+                Have an idea for a fitness activity or wellness event? We're always 
+                looking for student volunteers to help organize and lead activities. 
+                Get involved and make a difference on campus!
               </p>
               <Link 
                 to="/" 
                 className="btn-primary inline-flex items-center gap-2 group"
               >
-                Contact Us
+                Get Involved
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>

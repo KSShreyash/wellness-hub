@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Flame, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
+import { Flame, Instagram, Twitter, Facebook, Mail } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
@@ -12,7 +12,7 @@ const Footer = () => {
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Youtube, href: "#", label: "Youtube" },
+    { icon: Mail, href: "#", label: "Email" },
   ];
 
   const developers = [
@@ -31,11 +31,14 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-orange-gradient flex items-center justify-center">
                 <Flame className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">FitLife</span>
+              <span className="text-xl font-bold text-foreground">Campus Fit</span>
             </Link>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Transform your life through fitness. Join our community and discover 
-              the power of wellness, movement, and personal growth.
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+              A free, student-run fitness club open to all college students. 
+              Join us for peer-led workouts, wellness events, and a supportive community.
+            </p>
+            <p className="text-primary text-sm font-medium mb-6">
+              A student-run fitness club of [College Name]
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -72,12 +75,12 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-foreground font-semibold mb-4">Get in Touch</h4>
             <ul className="space-y-3 text-muted-foreground text-sm">
-              <li>123 Fitness Street</li>
-              <li>Wellness City, WC 12345</li>
-              <li>hello@fitlife.club</li>
-              <li>+1 (555) 123-4567</li>
+              <li>Student Recreation Center</li>
+              <li>Room 101</li>
+              <li>campusfit@college.edu</li>
+              <li>Follow us on social media!</li>
             </ul>
           </div>
 
@@ -95,10 +98,10 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} FitLife Club. All rights reserved.
+            © {new Date().getFullYear()} Campus Fit Club. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
-            Built with passion for fitness and wellness
+            Free • Student-Run • Open to All
           </p>
         </div>
       </div>
