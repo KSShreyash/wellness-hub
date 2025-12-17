@@ -57,9 +57,9 @@ const EventCard = ({ title, date, time, location, description, status, index }: 
       </p>
 
       {isUpcoming && (
-        <button className="btn-primary text-sm py-2 px-4">
-          Register Now
-        </button>
+        <span className="inline-block text-sm py-2 px-4 bg-primary/10 text-primary rounded-lg font-medium">
+          Free to Attend
+        </span>
       )}
     </div>
   );
