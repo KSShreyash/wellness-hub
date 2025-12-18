@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FeatureCard from "@/components/FeatureCard";
 import SEO from "@/components/SEO";
-import heroImage from "@/assets/hero-athlete.png";
+import heroImage from "@/assets/hero-athlete.jpg";
 
 const features = [
   {
@@ -64,16 +64,16 @@ const Index = () => {
               {/* Content */}
               <div className="order-2 lg:order-1">
                 <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 opacity-0 animate-fade-in">
-                  Free • Student-Run • Open to All
+                  Open to All
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in-up">
-                  Your Campus{" "}
+                  VIT Chennai{" "}
                   <span className="text-gradient">Fitness</span>{" "}
                   Community
                 </h1>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl opacity-0 animate-fade-in-up stagger-1">
-                  A student-run fitness club open to all college students. Join us for peer-led 
+                  A student-run fitness club open to all VIT Chennai students. Join us for peer-led 
                   workouts, campus wellness events, and a supportive community focused on 
                   health, fitness, and personal growth—completely free!
                 </p>
@@ -94,7 +94,7 @@ const Index = () => {
                   <h3 className="text-foreground font-semibold mb-2">About Our Club</h3>
                   <p className="text-sm text-muted-foreground">
                     We're a group of passionate students dedicated to making fitness accessible 
-                    to everyone on campus. No fees, no membership—just show up and get moving!
+                    to everyone on campus. No fees, just show up and get moving!
                   </p>
                 </div>
               </div>

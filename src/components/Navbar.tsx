@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Flame } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/hero-athlete.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +21,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-orange-gradient flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Flame className="w-6 h-6 text-primary-foreground" />
+            <div className="w-10 h-10 rounded-xl overflow-hidden group-hover:scale-110 transition-transform duration-300">
+              <img
+                src={logo}
+                alt="Fitness Club Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <span className="text-xl font-bold text-foreground">Campus Fit</span>
+            <span className="text-xl font-bold text-foreground">Fitness Club</span>
           </Link>
 
           {/* Desktop Navigation */}

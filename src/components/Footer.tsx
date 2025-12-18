@@ -16,9 +16,9 @@ const Footer = () => {
   ];
 
   const developers = [
-    "Developer 1: Alex Johnson",
-    "Developer 2: Sarah Chen",
-    "Developer 3: Marcus Williams",
+    "Kumar Shreyash (23BCE1882)",
+    "Anumeya Sehgal (23BAI1203)",
+    "Aditya Jyoti (23BRS1381)",
   ];
 
   return (
@@ -34,11 +34,11 @@ const Footer = () => {
               <span className="text-xl font-bold text-foreground">Campus Fit</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              A free, student-run fitness club open to all college students. 
+              A free, student-run fitness club open to all VIT Chennai students. 
               Join us for peer-led workouts, wellness events, and a supportive community.
             </p>
             <p className="text-primary text-sm font-medium mb-6">
-              A student-run fitness club of [College Name]
+              A student-run fitness club of VIT Chennai
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -77,9 +77,7 @@ const Footer = () => {
           <div>
             <h4 className="text-foreground font-semibold mb-4">Get in Touch</h4>
             <ul className="space-y-3 text-muted-foreground text-sm">
-              <li>Student Recreation Center</li>
-              <li>Room 101</li>
-              <li>campusfit@college.edu</li>
+              <li>VIT Chennai</li>
               <li>Follow us on social media!</li>
             </ul>
           </div>
@@ -98,7 +96,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Campus Fit Club. All rights reserved.
+            © {new Date().getFullYear()} Fitness Club. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
             Free • Student-Run • Open to All
