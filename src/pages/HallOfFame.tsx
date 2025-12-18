@@ -39,7 +39,7 @@ const HallOfFame = () => {
               Hall of <span className="text-primary">Fame</span>
             </h1>
             <p className="text-foreground/70 max-w-2xl mx-auto">
-              Meet the dedicated student leaders who make Campus Fit possible.
+              Meet the dedicated student leaders who make Fitness Club possible.
             </p>
           </div>
 
