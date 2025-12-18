@@ -27,8 +27,8 @@ const HallOfFame = () => {
   return (
     <>
       <SEO
-        title="Hall of Fame - Campus Fit"
-        description="Meet the student leaders of Campus Fit - our President, Vice President, and Treasurer."
+        title="Hall of Fame - Fitness Club"
+        description="Meet the student leaders of Fitness Club - our President, Vice President, and Treasurer."
       />
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">
