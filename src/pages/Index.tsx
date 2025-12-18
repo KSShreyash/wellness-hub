@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FeatureCard from "@/components/FeatureCard";
 import SEO from "@/components/SEO";
-import heroImage from "@/assets/hero-athlete.jpg";
+import heroImage from "@/assets/Hero-removebg-preview.png";
 
 const features = [
   {

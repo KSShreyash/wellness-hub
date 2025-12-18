@@ -58,7 +58,7 @@ const Navbar = () => {
               to="/events"
               className="btn-primary inline-flex items-center gap-2"
             >
-              Get Involved
+              Login/Sign Up
             </Link>
           </div>
 
